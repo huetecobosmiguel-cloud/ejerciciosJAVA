@@ -6,20 +6,20 @@ public class Actividad13 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int dia, mes, anno;
+		int hora, min, seg;
 
-		System.out.println("Introduzca una fecha:");
+		System.out.println("Introduzca la hora actual:");
 		System.out.println("Horas:");
-		dia = sc.nextInt();
+		hora = sc.nextInt();
 		System.out.println("Min:");
-		mes = sc.nextInt();
+		min = sc.nextInt();
 		System.out.println("Seg:");
-		anno = sc.nextInt();
+		seg = sc.nextInt();
 		
-		if (dia >= 32 || mes >= 13) {
+		if (hora >= 24 || min >= 60 || seg >= 60) {
 			System.out.println("Has introducido una hora no válida.");
 		} else {
-			System.out.print("hora actual: [" + hora + ":" + min + ":" + seg + "] -> ");
+			System.out.print("Hora actual: [" + hora + ":" + min + ":" + seg + "] -> ");
 		
 			seg++;
 		
@@ -35,7 +35,7 @@ public class Actividad13 {
 				}
 			}
 		
-			System.out.print(" hora actual + 1 segundo [" + hora + ":" + min + ":" + seg + "]");
+			System.out.println("Hora actual + 1 segundo: [" + hora + ":" + min + ":" + seg + "]");
 		}
 		
 	}

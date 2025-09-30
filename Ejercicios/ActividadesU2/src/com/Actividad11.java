@@ -11,12 +11,12 @@ public class Actividad11 {
 		int num = sc.nextInt();
 		
 		String nota = switch (num) {
-		case 0, 1, 2, 3, 4 -> "Insuficiente";
-		case 5 -> "Suficiente";
-		case 6 -> "Bien";
-		case 7,8 -> "Notable";
-		case 9, 10 -> "Sobresaliente";
-		default -> "Error";
+			case 0, 1, 2, 3, 4 -> "Insuficiente";
+			case 5 -> "Suficiente";
+			case 6 -> "Bien";
+			case 7,8 -> "Notable";
+			case 9, 10 -> "Sobresaliente";
+			default -> "Error";
 		};
 		
 		if (nota != "Error") {
