@@ -80,7 +80,7 @@ public class Actividad16 {
 						case 7 -> " y siete";
 						case 8 -> " y ocho";
 						case 9 -> " y nueve";
-						default -> "Error";
+						default -> "";
 					};
 				}
 				
