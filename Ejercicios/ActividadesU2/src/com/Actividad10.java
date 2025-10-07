@@ -32,8 +32,8 @@ public class Actividad10 {
 		} else {
 			
 			millares = num / 1000;
-			centenas = num /100 % 10;
-			decenas = num /10 % 10;
+			centenas = num / 100 % 10;
+			decenas = num / 10 % 10;
 			unidades = num % 10;
 			
 			if (unidades == millares && decenas == centenas) {
