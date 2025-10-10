@@ -15,16 +15,26 @@ public class Actividad5 {
 		min = sc.nextInt();
 		System.out.println("");
 		
-		System.out.println("Ahora, introduce un valor dentro del rango:");
-		num = sc.nextInt();
-		
-		while (num > max || min > num) {
-			System.out.println("\nNo está dentro del rango, prueba otra vez:");
-			num = sc.nextInt();
+		if (min > max) {
+			int aux = max;
+			max = min;
+			min = aux;
+			System.out.println("Se han invertido los valores al estar al revés.\nMax: " + max + ", Min: " + min + "\n");
 		}
 		
-		System.out.println("\n" + num + " está dentro del rango.");
-
+		if (max == min) {
+			System.out.println("No existe valores entre " + max + " y " + min);
+		} else {
+			System.out.println("Ahora, introduce un valor dentro del rango:");
+			num = sc.nextInt();
+			
+			while (num > max || min > num) {
+				System.out.println("\nNo está dentro del rango, prueba otra vez:");
+				num = sc.nextInt();
+			}
+			
+			System.out.println("\n" + num + " está dentro del rango.");
+		}
 	}
 
 }
