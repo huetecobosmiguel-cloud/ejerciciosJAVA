@@ -32,7 +32,6 @@ public class Actividad16 {
 					case 13 -> "Trece";
 					case 14 -> "Catorce";
 					case 15 -> "Quince";
-					default -> "Error";
 				};
 				
 			} else {
