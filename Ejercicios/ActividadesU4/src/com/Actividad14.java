@@ -2,7 +2,7 @@ package com;
 
 import java.util.Scanner;
 
-public class Actividad14 {
+public class Actividad13 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -16,14 +16,14 @@ public class Actividad14 {
 			n = sc.nextInt();
 		}
 		
-		System.out.println(n + "! = " + factorial(n));
+		System.out.println("f(" + n + ") = " + f(n));
 	}
 	
-	public static long factorial (int n) {
-		if (n == 0) {
+	public static int f (int n) {
+		if (n == 1 || n == 0) {
 			return 1;
 		} else {
-			return n * factorial(n - 1);
+			return f(n - 1) + f(n - 2);
 		}
 	}
 
