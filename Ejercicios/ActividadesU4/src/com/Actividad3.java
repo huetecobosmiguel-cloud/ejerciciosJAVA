@@ -7,7 +7,6 @@ public class Actividad3 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int tipo, rad, alt;
-		
 
 		System.out.println("¿Qué quieres calcular?\n(1) Área	(2) Volumen");
 		tipo = sc.nextInt();

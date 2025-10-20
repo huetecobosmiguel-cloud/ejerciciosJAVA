@@ -27,7 +27,7 @@ public class Actividad7 {
 	public static boolean esPrimo (int num) {
 		boolean primo = true;
 		//Compruebo si es primo comparando el resto
-		for (int i = 2; i < num; i++) {
+		for (int i = 2; i < num/2; i++) {
 			if (num % i == 0) {
 				primo = false;
 			} 

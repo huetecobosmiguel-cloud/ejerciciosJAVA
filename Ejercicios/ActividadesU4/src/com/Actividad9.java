@@ -28,7 +28,7 @@ public class Actividad9 {
 		
 		for (int i = 2; i <= num; i++) {
 			primo = true;
-			for (int e = 2; e < i; e++) {
+			for (int e = 2; e < i/2 ; e++) {
 				if (i % e == 0) {
 					primo = false;
 					break;

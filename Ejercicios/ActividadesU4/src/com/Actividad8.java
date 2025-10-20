@@ -6,15 +6,15 @@ public class Actividad8 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		long num, div;
+		int num, div;
 
 		System.out.println("Introduce un número entero:");
-		num = sc.nextLong();
+		num = sc.nextInt();
 		
 		//Asegurarse que "num" es válido
 		while (num < 0) {
 			System.out.println("Número no valido, prueba otra vez:");
-			num = sc.nextLong();
+			num = sc.nextInt();
 		}
 		
 		div = divisores(num);
@@ -22,13 +22,13 @@ public class Actividad8 {
 		
 	}
 	
-	public static long divisores (long num) {
-		long cant = 0;
+	public static int divisores (int num) {
+		int cant = 0;
 		boolean primo;
 		
-		for (long i = 2; i <= num; i++) {
+		for (int i = 2; i <= num; i++) {
 			primo = true;
-			for (long e = 2; e < i; e++) {
+			for (int e = 2; e < i/2; e++) {
 				if (i % e == 0) {
 					primo = false;
 					break;
