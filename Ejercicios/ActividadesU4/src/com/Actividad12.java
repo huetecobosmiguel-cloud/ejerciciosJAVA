@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Actividad12 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
 		int op, a, b;
 
@@ -25,7 +25,7 @@ public class Actividad12 {
 		System.out.println("Resultado: " + calculadora(a, b, op));
 	}
 	
-	public static double calculadora (int a, int b, int op) {
+	public static double calculadora (int a, int b, int op) throws Exception {
 		switch (op) {
 		case 1: 
 			return a + b;
@@ -34,8 +34,9 @@ public class Actividad12 {
 		case 3:
 			return a * b;
 		case 4:
-			return a / b;
+			if (b != 0) return a / b;
+		default:
+			throw new Exception("Error al leer operación.");
 		}
-		return 67;
 	}
 }
