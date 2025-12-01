@@ -15,7 +15,7 @@ public class Actividad13 {
 	}
 	
 	public static void contarLetras (String text) {
-		int[] contador = new int[27];
+		int[] contador = new int[26];
 		for (char c : text.toCharArray()) {
 			if (c >= 'a' && c <= 'z') {
 				contador[c - 'a']++;
